@@ -1,0 +1,137 @@
+<style>
+body {
+  background: White;
+  font-family: Sukhumvit Set; /* Sukhumvit Set, Kanit */
+}
+
+.custom-select { /* Select Tag */
+  font-family: Sukhumvit Set; /* Sukhumvit Set, Kanit */
+
+  padding: 10px 10px 10px 12px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 16px;
+  width: 343px;
+  height: 56px;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #6E798C;
+}
+
+.merchant-items {
+  /* display: flex; */
+
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 343px;
+  height: 124px;
+  left: 0px;
+  top: 0px;
+
+  /* General / White */
+
+  background: #FFFFFF;
+  /* General / Light Grey */
+
+  border: 1px solid #F2F2F2;
+  border-radius: 16px;
+
+  margin: 16px;
+}
+
+img {
+  border-radius: 16px;
+  float: left;
+}
+
+.merchant-items .business-name {
+    /* Inside Auto Layout */
+    
+  margin: 16px 0px 35px 124px;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.merchant-items .phone {
+    /* Inside Auto Layout */
+
+  margin: 16px 0px 16px 124px;
+
+  font-weight: 500;
+  font-size: 16px;
+}
+
+a:link, a:visited {
+  color: #007AE9;
+}
+
+</style>
+
+
+
+<h1 style="color: #E08477;">ร้านค้าที่เข้าร่วมกิจกรรม</h1>
+<h2 style="color: #6E798C;">#นครพนมรวมใจ</h2>
+<h3 style="color: #AFB5C0;">เมืองรองที่พร้อมเสมอ</h3>
+
+<br>
+
+<div>
+  <select class="custom-select">
+    <option value="0">ชุมชนทั้งหมด</option>
+    <option value="1">Shop-1</option>
+    <option value="2">Shop-2</option>
+    <option value="3">Shop-3</option>
+    <option value="4">Shop-4</option>
+    <option value="5">Shop-5</option>
+  </select>
+</div>
+
+<br>
+
+<div class="merchant-items">
+  <%= image_tag '/assets/shop.png', :size=> '124x124', :style=> "margin-right: 16px;" %>
+  <p class="business-name">ชื่อร้านค้า</p>
+
+  <p class="phone">
+    <%= link_to 'เบอร์โทร', page_path('shops') %>
+  </p>
+</div>
+
+<div class="merchant-items">
+  <%= image_tag '/assets/shop.png', :size=> '124x124', :style=> "margin-right: 16px;" %>
+  <p class="business-name">ชื่อร้านค้า</p>
+
+  <p class="phone">
+    <%= link_to 'เบอร์โทร', page_path('shops') %>
+  </p>
+</div>
+
+<div class="merchant-items">
+  <%= image_tag '/assets/shop.png', :size=> '124x124', :style=> "margin-right: 16px;" %>
+  <p class="business-name">ชื่อร้านค้า</p>
+
+  <p class="phone">
+    <%= link_to 'เบอร์โทร', page_path('shops') %>
+  </p>
+</div>
+
+<div class="merchant-items">
+<%= image_tag '/assets/shop.png', :size=> '124x124', :style=> "margin-right: 16px;" %>
+
+  <p class="phone">
+    <%= link_to 'เบอร์โทร', page_path('shops') %>
+  </p>
+</div>
+
+
+<script>
+
+</script>
+
+
+
