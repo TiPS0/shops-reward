@@ -1,11 +1,11 @@
 <style>
 body {
   background: White;
-  font-family: Sukhumvit Set; /* Sukhumvit Set, Kanit */
+  font-family: Kanit; /* Sukhumvit Set, Kanit */
 }
 
 .custom-select { /* Select Tag */
-  font-family: Sukhumvit Set; /* Sukhumvit Set, Kanit */
+  font-family: Kanit; /* Sukhumvit Set, Kanit */
 
   padding: 10px 10px 10px 12px;
   background: #FFFFFF;
@@ -74,9 +74,9 @@ a:link, a:visited {
 
 
 
-<h1 style="color: #E08477;">ร้านค้าที่เข้าร่วมกิจกรรม</h1>
-<h2 style="color: #6E798C;">#นครพนมรวมใจ</h2>
-<h3 style="color: #AFB5C0;">เมืองรองที่พร้อมเสมอ</h3>
+<h1 style="color: #E08477; font-size: 24px;">ประวัติการใช้สิทธิ์กิจกรรม</h1>
+<h2 style="color: #6E798C; font-size: 16px;">#นครพนมรวมใจ</h2>
+<h3 style="color: #AFB5C0; font-size: 12px; font-weight: 500;">เมืองรองที่พร้อมเสมอ</h3>
 
 <br>
 
@@ -121,17 +121,10 @@ a:link, a:visited {
 </div>
 
 <div class="merchant-items">
-<%= image_tag '/assets/shop.png', :size=> '124x124', :style=> "margin-right: 16px;" %>
+  <%= image_tag '/assets/shop.png', :size=> '124x124', :style=> "margin-right: 16px;" %>
+  <p class="business-name">ชื่อร้านค้า</p>
 
   <p class="phone">
     <%= link_to 'เบอร์โทร', page_path('shops') %>
   </p>
 </div>
-
-
-<script>
-
-</script>
-
-
-
